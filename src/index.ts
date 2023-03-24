@@ -33,6 +33,14 @@ var cookieOpt: CookieOptions = {
   secure: false,
 };
 
+
+
+if (process.env.NODE_ENV === "production") {
+  app.set("trust proxy", 1);
+  cookieOpt.sameSite = "none";
+  cookieOpt.secure = true;
+}
+
 var sess: SessionOptions = {
   resave: false,
   saveUninitialized: false,
@@ -43,12 +51,6 @@ var sess: SessionOptions = {
   }),
   cookie: cookieOpt,
 };
-
-if (process.env.NODE_ENV === "production") {
-  app.set("trust proxy", 1);
-  cookieOpt.sameSite = "none";
-  cookieOpt.secure = true;
-}
 
 app.use(session(sess));
 
