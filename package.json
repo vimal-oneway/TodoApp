@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx nodemon --watch \"./**/*.ts\" --exec \"ts-node\"  src/index.ts  ",
-    "build": "tsc"
+    "start": "node dist/index.js ",
+    "build": " "
   },
   "keywords": [],
   "author": "",
