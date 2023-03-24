@@ -8,6 +8,7 @@ declare global {
       COOKIE_SECRET:string;
       SER_URL:string;
       CLIENT_ID:string;
+      CLI_URL:string;
       CLIENT_SECRET:string;
     }
   }

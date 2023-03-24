@@ -16,7 +16,7 @@ import "./middleware/passport.middleware";
 const app = express();
 
 const corsOption: CorsOptions = {
-  origin: process.env.CLI_URL,
+  origin: env.CLI_URL,
   credentials: true,
 };
 
@@ -56,7 +56,8 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.get(
-  "/api/v1/google",(req, res, next)=>{
+  "/api/v1/google",
+  (req, res, next) => {
     res.header(
       "Access-Control-Allow-Methods",
       "GET, POST, PUT, DELETE, OPTIONS"
@@ -95,7 +96,7 @@ app.get(
     );
     res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
     res.header("Access-Control-Allow-Credentials", "true");
-    res.send("hi")
+    res.send("hi");
   }
 );
 
