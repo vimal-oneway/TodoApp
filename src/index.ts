@@ -16,7 +16,7 @@ import "./middleware/passport.middleware";
 const app = express();
 
 const corsOption: CorsOptions = {
-  origin: "http://localhost:5173",
+  origin: process.env.CLI_URL,
   credentials: true,
 };
 
