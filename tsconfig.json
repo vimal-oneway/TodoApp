@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "typeRoots": [
+      "./src/types", // this is where you define your types
+      "./node_modules/@types" //this where npm packages containing types are located
+    ],
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["node_modules/*", "*"]
+    }
+  }
+  // "include": [
+  //   "*"
+  // ]
+}

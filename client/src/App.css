@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: #fff 2px solid; */
+}
+
+body {
+  background-color: #242424;
+  color: #fff;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+
+  background-color: #111;
+  color: #fff;
+
+  font-weight: 700;
+  text-transform: uppercase;
+
+  border-radius: 0.5rem;
+}
+
+.checkbox-btn input[type="checkbox"] {
+  padding: 1rem;
+  background-color: #242424;
+  cursor: pointer;
+}
+
+/* ? =======================
+?       todo card 
+? ========================== */
+
+/* .card--con {
+  background-color: #111;
+  padding: 1em 2em;
+} */
+
+.btn--group {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.btn--group > * {
+  margin: 0 6px;
+}
+
+.txtBox {
+  padding: 0.5rem;
+  width: 90%;
+  margin: 0 0 0 0.5rem;
+  background-color: #444;
+  color: #fff;
+  outline: none;
+  border: transparent 1px solid;
+  border-radius: 0.5rem;
+}
+
+input[type="date"] {
+  background: #111 url("../public/calcendarIcon.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 95%;
+  margin-bottom: 12px;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  transition: all 0.2s ease-out;
+  border: blue 1px solid;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
